@@ -1,0 +1,29 @@
++---------+       +--------+
+|  Film   |       | Viewer |          +------------+
++---------+       +--------+          |   Chapter  |
+|  title  +------^+ name   |          +------------+
+|  year   +v------+ age    |          |   title    |                XXXXXXXXXXXXXXXXXXX
+|   ID    |       |  ID    |          |  Book_ID   |      +---------X-------+         X
++-X-------+       +----X---+          |    ID      |      |  customer_data  |         X
+  X                    X              |            |      +-----------------+    +----X------+
+  X    +-----------+   X              +-----+------+      |  Reader_ID      |    |  Reader   |
+  X    | Marketer  |   X                    ^        XXXXX|  Book_ID        |    +-----------+
+  X    +-----------+   X                    |        X    +-----------------+    |  ID       |
+  XXXXXX film_ID   |    X                   |        X                           |  name     |
+       | viewer_ID |XXXXX             +-----+---+    XX                          |  age      |
+       |           |                  | Book    XXXXXXX                          |           |
+       +-----------+                  +---------|                                +-----------+
+                                      | title   |   +--------------+
++--------+        +-------+           | year    XXXX|  Book_store  |
+| Worker |        | Shift |           | ID      |   +--------------+
++----------------^--------+           +---------+   |  Book_ID     |
+| name   |        | day   |                         |  Author_ID   |
+| wage   +^-------+ time  |           +---------+   |              |
+| ID     |        |  ID   |           | Author  |   +--------------+
++-------++--------+-+-----+           +---------+          X
+  X     | Manager   |  X              | name    |XXXXXXXXXXX
+  X     +-----------+ XX              | ID      |
+  X     | worker_ID | XX              +---------+
+  XXXXXXX shift_ID  |XXX
+        |           |
+        +-----------+
